@@ -115,7 +115,7 @@ project-linux-docker-microservices/
 2.  **Clone o Repositório:**
     ```bash
     git clone https://github.com/MarcosWinther/project-linux-python-docker-microservices-example
-    cd project-linux-docker-microservices # Ou o nome que você deu ao repositório
+    cd project-linux-docker-microservices 
     ```
 3.  **Construa e Inicie os Containers:** O Docker Compose faz todo o trabalho pesado!
     ```bash
