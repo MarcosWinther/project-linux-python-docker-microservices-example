@@ -1,0 +1,32 @@
+version: '3.8' # Use uma versão apropriada do Compose
+
+services:
+  servico-produto:
+    build: ./servico-produto # Diretório onde está o Dockerfile do serviço
+    container_name: container-produto # Nome do container (opcional)
+    ports:
+      - "5001:5001" # Mapeia porta 5001 do host para 5001 do container
+    volumes:
+      # Mapeia o arquivo JSON local para dentro do container.
+      # Isso permite persistência e visualização das alterações.
+      - ./servico-produto/products.json:/app/products.json
+    networks:
+      - microservices-net # Adiciona o serviço a uma rede customizada
+
+  servico-pedido:
+    build: ./servico-pedido
+    container_name: container-pedido
+    ports:
+      - "5002:5002"
+    environment:
+      # Passa a URL do serviço de produto como variável de ambiente
+      # O Docker Compose resolve 'servico-produto' para o IP correto na rede
+      - PRODUTO_SERVICE_URL=http://servico-produto:5001
+    depends_on:
+      - servico-produto # Garante que o serviço de produto inicie antes (mas não que esteja pronto)
+    networks:
+      - microservices-net
+
+networks:
+  microservices-net: # Define a rede customizada
+    driver: bridge # Rede padrão do tipo bridge gerenciada pelo Docker

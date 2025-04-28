@@ -1,0 +1,137 @@
+# --- Python ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Usually these files are written by a python script from a template
+# before PyInstaller builds the exe, so as to inject date/version info into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# --- Docker ---
+# Local Docker Compose override files
+docker-compose.override.yml
+docker-compose.*.yml # Se usar arquivos específicos por ambiente não compartilhados
+
+# Docker build context cache (geralmente gerenciado pelo Docker, mas pode adicionar se necessário)
+# .dockerignore deve ser usado para controlar o contexto de build, mas ignorar aqui também não faz mal.
+
+# --- IDEs / Editores ---
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Vim
+*~
+*.swp
+*.swo
+
+# --- OS Generated Files ---
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# --- Arquivos Específicos do Projeto (Decisão Necessária) ---
+# products.json
+# DECISÃO: Neste *exemplo simples*, products.json contém dados iniciais.
+# Pode ser útil mantê-lo no Git para que outros possam clonar e ter dados iniciais.
+# PORÉM, em um cenário real onde este arquivo é constantemente modificado
+# pela aplicação (como um banco de dados real), você **DEVERIA** adicioná-lo
+# ao .gitignore para evitar commits constantes de dados e potenciais conflitos.
+# Se decidir ignorar:
+# products.json
