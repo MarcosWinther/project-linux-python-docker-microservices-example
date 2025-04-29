@@ -1,5 +1,17 @@
 # 🚀 Project Linux: Docker Microservices Adventure 🐳
 
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=yellow" alt="Language Python">
+  <img src="https://img.shields.io/badge/Framework-Flask-lightgrey?logo=flask" alt="Framework Flask">
+  <img src="https://img.shields.io/badge/Tool-Docker-blue?logo=docker" alt="Tool Docker">
+  <img src="https://img.shields.io/badge/Tool-Docker%20Compose-orange?logo=docker" alt="Tool Docker Compose">
+  <img src="https://img.shields.io/badge/OS-Linux-yellow?logo=linux" alt="OS Linux">
+  <img src="https://img.shields.io/badge/Database-JSON-lightgrey" alt="Database JSON">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT"> <!-- Ou outra licença se preferir -->
+  <img src="https://img.shields.io/badge/Type-Demo%20Project-informational" alt="Demo Project">
+</p>
+
 Bem-vindo(a) a uma demonstração prática de **Microsserviços com Docker** rodando no bom e velho terminal Linux! 🐧💻
 
 Este projeto simples foi criado para ilustrar como containerizar aplicações Python (Flask) e orquestrá-las usando Docker Compose, simulando um cenário básico de microsserviços.
